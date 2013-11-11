@@ -1,0 +1,1 @@
+make clean && XUL_VER_MAX="25.*" XUL_CFLAGS="-I/usr/local/xulrunner-sdk/include -I/usr/local/xulrunner-sdk/include/nspr" XUL_LDFLAGS="-L/usr/local/xulrunner-sdk/lib -lxpcomglue_s -lxul -lmozalloc -lplds4 -lplc4 -lnspr4 -lpthread -ldl" XPCOM_ABI_FLAGS="-Wl,-rpath=/usr/local/firefox" make all
