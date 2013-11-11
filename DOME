@@ -1,1 +1,29 @@
+https://github.com/infinity0/mozilla-gnome-keyring/issues/41
+
+https://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/24.0/sdk/
+https://ftp.mozilla.org/pub/mozilla.org/firefox/releases/24.0/linux-x86_64/en-US/
+
+ken@ken-x230: /usr/local$ ls -ltr
+total 56
+drwxr-xr-x  2 root root 4096 Oct 17  2012 src
+drwxr-xr-x  2 root root 4096 Oct 17  2012 sbin
+drwxr-xr-x  2 root root 4096 Oct 17  2012 include
+drwxr-xr-x  2 root root 4096 Oct 17  2012 games
+drwxr-xr-x  2 root root 4096 Oct 17  2012 etc
+drwxr-xr-x 11 root root 4096 Nov 28  2012 firefox-17
+lrwxrwxrwx  1 root root    9 Jan 22  2013 man -> share/man
+drwxr-xr-x  3 root root 4096 Jan 24  2013 Adobe
+drwxr-xr-x  6 root root 4096 May  6  2013 foreman
+drwxr-xr-x  6 root root 4096 May  6  2013 heroku
+drwxr-xr-x  5 root root 4096 May  6  2013 lib
+drwxr-xr-x  2 root root 4096 May 25 20:40 bin
+drwxr-xr-x  8 root root 4096 Sep 10 17:34 xulrunner-sdk-24.0
+drwxr-xr-x  8 root root 4096 Sep 10 19:15 firefox-24.0
+drwxr-xr-x  9 root root 4096 Oct  2 08:25 share
+lrwxrwxrwx  1 root root   12 Nov 10 16:45 firefox -> firefox-24.0
+lrwxrwxrwx  1 root root   19 Nov 10 16:47 xulrunner-sdk -> xulrunner-sdk-24.0/
+
+
+
+
 make clean && XUL_VER_MAX="25.*" XUL_CFLAGS="-I/usr/local/xulrunner-sdk/include -I/usr/local/xulrunner-sdk/include/nspr" XUL_LDFLAGS="-L/usr/local/xulrunner-sdk/lib -lxpcomglue_s -lxul -lmozalloc -lplds4 -lplc4 -lnspr4 -lpthread -ldl" XPCOM_ABI_FLAGS="-Wl,-rpath=/usr/local/firefox" make all
